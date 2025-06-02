@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import HeroSection from "../components/heroSection";
+import Categories from "@/components/categories";
 
 export default function Home() {
 
@@ -173,6 +174,7 @@ export default function Home() {
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
       <HeroSection memeOfTheDay={memeOfTheDay} />
+      <Categories categories={categories} />
         </div>
       </div>
       <Footer />
