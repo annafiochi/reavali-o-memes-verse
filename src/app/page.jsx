@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -169,7 +170,7 @@ export default function Home() {
     <div className={styles.container}>
       {/* COMPONENTE: Header */}
      <Header />
-
+    <Footer />
       {/* FIM COMPONENTE: Header */}
 
       
