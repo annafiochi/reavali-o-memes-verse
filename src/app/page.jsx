@@ -1,9 +1,10 @@
 import styles from "./page.module.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import HeroSection from "../components/heroSection";
 
 export default function Home() {
-  // Array de dados dos memes para serem passados como props
+
   const memes = [
     {
       id: 1,
@@ -74,7 +75,7 @@ export default function Home() {
     },
   ];
 
-  // Dados para o meme do dia (hero section)
+  
   const memeOfTheDay = {
     id: 7,
     title: "Meme do Dia: Quando seu código funciona de primeira",
@@ -87,7 +88,7 @@ export default function Home() {
     authorAvatar: "https://i.pravatar.cc/150?img=20",
   };
 
-  // Array de criadores em destaque
+  
   const topCreators = [
     {
       id: 1,
@@ -112,7 +113,7 @@ export default function Home() {
     },
   ];
 
-  // Categorias de memes
+  
   const categories = [
     { id: 1, name: "Programação", icon: "💻", count: 478 },
     { id: 2, name: "Escola", icon: "📚", count: 325 },
@@ -122,7 +123,7 @@ export default function Home() {
     { id: 6, name: "Esportes", icon: "⚽", count: 195 },
   ];
 
-  // Memes em destaque
+  
   const featuredMemes = [
     {
       id: 8,
@@ -150,7 +151,7 @@ export default function Home() {
     },
   ];
 
-  // Eventos próximos
+  
   const upcomingEvents = [
     {
       id: 1,
@@ -168,12 +169,13 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      {/* COMPONENTE: Header */}
-     <Header />
-    <Footer />
-      {/* FIM COMPONENTE: Header */}
-
-      
+      <Header />
+      <div className={styles.mainContent}>
+        <div className={styles.contentArea}>
+      <HeroSection memeOfTheDay={memeOfTheDay} />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
