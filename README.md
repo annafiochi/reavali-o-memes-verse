@@ -15,7 +15,7 @@ O **MemeVerse** é uma aplicação voltada para adolescentes e jovens adultos qu
 - **Next.js 15** – Framework React para desenvolvimento web moderno
 - **React** – Biblioteca para construção de interfaces de usuário
 - **CSS Modules** – Estilização modular e isolada por componente
-- **JavaScript ES6+** – Sintaxe moderna e recursos avançados
+- **JavaScript ** – Sintaxe moderna e recursos avançados
 
 ---
 
@@ -65,7 +65,6 @@ memeverse/
 │   └── index.js
 ├── styles/
 │   └── globals.css
-├── public/
 ├── package.json
 └── README.md
 ```
@@ -124,10 +123,6 @@ memeverse/
 
 ```bash
 npm run dev        # Executa em modo de desenvolvimento
-npm run build      # Gera build de produção
-npm run start      # Executa build de produção
-npm run lint       # Executa verificação de código
-```
 
 ---
 
