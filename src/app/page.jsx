@@ -193,3 +193,4 @@ export default function Home() {
     </div>
   );
 }
+//felipe dev olha essa maravilha de código, é o que eu chamo de código limpo, organizado e fácil de entender.
