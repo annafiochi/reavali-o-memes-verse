@@ -6,6 +6,7 @@ import Categories from "@/components/categories";
 import SideBar from "@/components/sideBar";
 import InteractionBar from "@/components/interactionBar";
 import Feed from "@/components/feed";
+import FeaturedMemesSection from "@/components/featuredMemesSection";
 
 export default function Home() {
 
@@ -180,6 +181,7 @@ export default function Home() {
       <Categories categories={categories} />
       <SideBar upcomingEvents={upcomingEvents} />
       <Feed  memes={memes}/>
+      <FeaturedMemesSection memes={featuredMemes} />
       
         </div>
       </div>
