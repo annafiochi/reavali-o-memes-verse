@@ -21,3 +21,8 @@
   flex-direction: column;
   gap: 30px;
 }
+@media (max-width: 1024px) {
+  .mainContent {
+    flex-direction: column;
+  }
+}
