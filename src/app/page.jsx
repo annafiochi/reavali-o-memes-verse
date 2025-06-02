@@ -4,6 +4,8 @@ import Footer from "../components/footer";
 import HeroSection from "../components/heroSection";
 import Categories from "@/components/categories";
 import SideBar from "@/components/sideBar";
+import InteractionBar from "@/components/interactionBar";
+import Feed from "@/components/feed";
 
 export default function Home() {
 
@@ -177,6 +179,8 @@ export default function Home() {
       <HeroSection memeOfTheDay={memeOfTheDay} />
       <Categories categories={categories} />
       <SideBar upcomingEvents={upcomingEvents} />
+      <Feed  memes={memes}/>
+      
         </div>
       </div>
       <Footer />
