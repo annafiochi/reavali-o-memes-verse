@@ -4,9 +4,10 @@ import Footer from "../components/footer";
 import HeroSection from "../components/heroSection";
 import Categories from "@/components/categories";
 import SideBar from "@/components/sideBar";
-import InteractionBar from "@/components/interactionBar";
+import InteractionBar from "../components/interactionBar";
 import Feed from "@/components/feed";
 import FeaturedMemesSection from "@/components/featuredMemesSection";
+import CreatorSection from "@/components/creatorSection";
 
 export default function Home() {
 
@@ -182,6 +183,7 @@ export default function Home() {
       <SideBar upcomingEvents={upcomingEvents} />
       <Feed  memes={memes}/>
       <FeaturedMemesSection memes={featuredMemes} />
+      <CreatorSection topCreators={topCreators} />
       
         </div>
       </div>
